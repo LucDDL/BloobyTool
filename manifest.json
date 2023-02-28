@@ -1,0 +1,19 @@
+{
+    "name": "Assistente da base",
+    "version": "1.3",
+    "manifest_version": 2,
+    "permissions": [
+    "tabs",
+    "activeTab",
+    "windows"
+    ],
+    "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+    },
+    "browser_action": {
+    "default_popup": "popup.html"
+    }
+  }

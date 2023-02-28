@@ -1,0 +1,84 @@
+::-webkit-scrollbar {width: 5px; }
+::-webkit-scrollbar-track {background-color: #444654; }
+::-webkit-scrollbar-thumb {background-color: #33a3e9; border-radius: 5px; }
+
+body {
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 500px;
+  background: #444654;
+  padding: 0px;
+  font-family: system-ui, sans-serif;
+ 
+}
+
+#qst{
+  color: green;
+}
+
+label {
+  color: green;
+}
+
+.btn-custom {
+  color: #fff;
+  background-color: rgb(141, 45, 141);
+  border-color: rgb(141, 45, 141);
+}
+
+#lista-artigos {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#lista-artigos li {
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#lista-artigos li a {
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+#lista-artigos li button {
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+#lista-artigos li button:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
+.btn-custom:hover {
+  background-color: green;
+}
+
+input {
+  border: none;
+  background-color: rgb(121, 126, 148);
+}
+
+.btn-upload {
+  border: none;
+  background-color: #6374a3;
+  color: rgb(255, 255, 255);
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 9px;
+}
+
+.card-body{
+  border: none;
+}
+
