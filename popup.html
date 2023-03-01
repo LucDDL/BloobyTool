@@ -9,6 +9,25 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  <!-- SDK firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore.js"></script>
+  <script>
+     const firebaseConfig = {
+    apiKey: "AIzaSyBvFibgv3lqZcChObiXTQ-1oIQIL-IEXPQ",
+    authDomain: "bloobytoll-9def8.firebaseapp.com",
+    projectId: "bloobytoll-9def8",
+    storageBucket: "bloobytoll-9def8.appspot.com",
+    messagingSenderId: "913753696190",
+    appId: "1:913753696190:web:476844104aec4ad1a2bbef"
+  };
+  
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  </script>
+ 
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
   <link rel="stylesheet" href="style.css">
 
@@ -88,6 +107,7 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
   <script src="/popup.js"></script>
+  <script src="/firebaseConfig.js"></script>
 </body>
 
 </html>
