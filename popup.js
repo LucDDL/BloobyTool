@@ -133,15 +133,3 @@ function buscarArtigos(termo) {
   });
 }
 
-
-const estrelas = document.querySelectorAll('.estrela');
-estrelas.forEach((estrela, index) => {
-  estrela.addEventListener('click', () => {
-    for (let i = 0; i <= index; i++) {
-      estrelas[i].classList.add('selecionada');
-    }
-    for (let i = index + 1; i < estrelas.length; i++) {
-      estrelas[i].classList.remove('selecionada');
-    }
-  });
-});
