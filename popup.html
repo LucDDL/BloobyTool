@@ -9,35 +9,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-
-  <!-- SDK firebase -->
-  <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore.js"></script>
-  <script>
-     const firebaseConfig = {
-    apiKey: "AIzaSyBvFibgv3lqZcChObiXTQ-1oIQIL-IEXPQ",
-    authDomain: "bloobytoll-9def8.firebaseapp.com",
-    projectId: "bloobytoll-9def8",
-    storageBucket: "bloobytoll-9def8.appspot.com",
-    messagingSenderId: "913753696190",
-    appId: "1:913753696190:web:476844104aec4ad1a2bbef"
-  };
-  
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  </script>
- 
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
   <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body>
+<body >
   <div class="jumbotron"
-    style="background: linear-gradient(to bottom, #3d3b3b, #23449e, rgb(141, 45, 141)); color: aliceblue; border-radius: 0; width:950px; ">
+    style="background: linear-gradient(to bottom, #3d3b3b, #23449e, rgb(141, 45, 141)); color: aliceblue; border-radius: 0; width:950px; height: 130px;">
     <div class="container">
-      <h1> <i class="fas fa-robot"></i> ZIGGY</h1>
+      <h1 style="margin-top: 0px;"> <i class="fas fa-robot"></i> <strong>BartZ</strong></h1>
       <p class="lead">base de conhecimento</p>
     </div>
   </div>
@@ -61,7 +43,7 @@
       <div class="card-body">
         <div class="row">
           <div class="col-md-8">
-            <h2 style="font-size: 20px; color: green;"> <strong>Deixe sua dica, pra gente!! 📝</strong></h2>
+            <h2 style="font-size: 20px; color: green;"> <strong>📝 Deixe sua dica, pra gente!!</strong></h2>
             <form id="form-artigo">
               <div class="form-group">
                 <label for="input-titulo"><strong>Título</strong></label>
@@ -107,7 +89,7 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
   <script src="/popup.js"></script>
-  <script src="/firebaseConfig.js"></script>
+  
 </body>
 
 </html>

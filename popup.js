@@ -33,6 +33,7 @@ function excluirArtigo(index) {
   artigos.splice(index, 1);
   localStorage.setItem('artigos', JSON.stringify(artigos)); // atualizar os artigos no localStorage
   listarArtigos();
+  
 }
 
 function listarArtigos() {
@@ -70,7 +71,15 @@ function exibirArtigo(artigo) {
     <h3>${artigo.titulo}</h3>
     <p>Autor: ${artigo.autor}</p>
     <p>Data: ${artigo.data}</p>
+    <div class="stars">
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    </div>
     <p>${artigo.conteudo}</p>
+   
   `;
   if (artigo.videoUrl) {
     conteudo += `
@@ -124,3 +133,15 @@ function buscarArtigos(termo) {
   });
 }
 
+
+const estrelas = document.querySelectorAll('.estrela');
+estrelas.forEach((estrela, index) => {
+  estrela.addEventListener('click', () => {
+    for (let i = 0; i <= index; i++) {
+      estrelas[i].classList.add('selecionada');
+    }
+    for (let i = index + 1; i < estrelas.length; i++) {
+      estrelas[i].classList.remove('selecionada');
+    }
+  });
+});
