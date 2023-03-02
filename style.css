@@ -31,19 +31,22 @@ label {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  
 }
 
 #lista-artigos li {
-  background-color: #f9f9f9;
+  background-color: #b1b3b4;
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 5px;
+  
 }
 
 #lista-artigos li a {
   font-weight: bold;
-  color: #333;
+  color: #000000;
   text-decoration: none;
+  
 }
 
 #lista-artigos li button {
@@ -52,7 +55,9 @@ label {
   border: none;
   border-radius: 5px;
   padding: 5px 10px;
-  margin-left: 10px;
+  margin-left: 330px;
+  
+
 }
 
 #lista-artigos li button:hover {
@@ -82,18 +87,4 @@ input {
   border: none;
 }
 
-.stars {
-  display: flex;
-  align-items: center;
-  font-size: 24px;
-}
-
-.fa-star {
-  color: gray;
-  cursor: pointer;
-}
-
-.fa-star.checked {
-  color: gold;
-}
 
