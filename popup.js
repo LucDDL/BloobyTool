@@ -33,7 +33,6 @@ function excluirArtigo(index) {
   artigos.splice(index, 1);
   localStorage.setItem('artigos', JSON.stringify(artigos)); // atualizar os artigos no localStorage
   listarArtigos();
-  
 }
 
 function listarArtigos() {
@@ -71,15 +70,7 @@ function exibirArtigo(artigo) {
     <h3>${artigo.titulo}</h3>
     <p>Autor: ${artigo.autor}</p>
     <p>Data: ${artigo.data}</p>
-    <div class="stars">
-    <i class="fa fa-star"></i>
-    <i class="fa fa-star"></i>
-    <i class="fa fa-star"></i>
-    <i class="fa fa-star"></i>
-    <i class="fa fa-star"></i>
-    </div>
     <p>${artigo.conteudo}</p>
-   
   `;
   if (artigo.videoUrl) {
     conteudo += `
@@ -90,46 +81,61 @@ function exibirArtigo(artigo) {
       `;
   }
   conteudo += `
-    
+    <button id="playBtn">Play</button>
+    <button id="btn-excluir-artigo">Excluir</button>
   `;
   document.getElementById('lista-artigos').innerHTML = conteudo;
 
   if (artigo.videoUrl) {
-    const playBtn = document.getElementById('playBtn');
-    playBtn.addEventListener('click', () => {
-      const video = document.getElementById('videoArtigo');
-      video.play();
+        const playBtn = document.getElementById('playBtn');
+            playBtn.addEventListener('click', () => {
+            const video = document.getElementById('videoArtigo');
+            video.play();
+            });
+    const pauseBtn = document.getElementById('pauseBtn');
+        pauseBtn.addEventListener('click', () => {
+        const video = document.getElementById('videoArtigo');
+        video.pause();
     });
-  }
-
-  const btnExcluir = document.getElementById('btn-excluir-artigo');
-btnExcluir.addEventListener('click', () => {
-excluirArtigo(artigo);
+    const muteBtn = document.getElementById('muteBtn');
+        muteBtn.addEventListener('click', () => {
+        const video = document.getElementById('videoArtigo');
+        video.muted = !video.muted;
+                if (video.muted) {
+                muteBtn.innerHTML = 'Unmute';
+                } else {
+                muteBtn.innerHTML = 'Mute';
+                }
+    });
+ }
+    
+    const btnExcluir = document.getElementById('btn-excluir-artigo');
+    btnExcluir.addEventListener('click', () => {
+    excluirArtigo(artigo);
+    });
+    }
+    
+    function buscarArtigos(termo) {
+            const lista = document.getElementById('lista-artigos');
+            lista.innerHTML = '';
+            const artigosEncontrados = artigos.filter((artigo) => {
+            return artigo.titulo.toLowerCase().includes(termo.toLowerCase());
+            });
+            artigosEncontrados.forEach((artigo, index) => {
+                const item = document.createElement('li');
+                const link = document.createElement('a');
+                const excluirBtn = document.createElement('button');
+                excluirBtn.innerHTML = 'Excluir';
+                excluirBtn.addEventListener('click', () => {
+                excluirArtigo(index);
+                });
+                    link.setAttribute('href', '#');
+                    link.innerHTML = artigo.titulo;
+                    link.addEventListener('click', () => {
+                    exibirArtigo(artigo);
+    });
+        item.appendChild(link);
+        item.appendChild(excluirBtn);
+        lista.appendChild(item);
 });
 }
-
-function buscarArtigos(termo) {
-  const lista = document.getElementById('lista-artigos');
-  lista.innerHTML = '';
-  const artigosEncontrados = artigos.filter((artigo) => {
-    return artigo.titulo.toLowerCase().includes(termo.toLowerCase());
-  });
-  artigosEncontrados.forEach((artigo, index) => {
-    const item = document.createElement('li');
-    const link = document.createElement('a');
-    const excluirBtn = document.createElement('button');
-    excluirBtn.innerHTML = 'Excluir';
-    excluirBtn.addEventListener('click', () => {
-      excluirArtigo(index);
-    });
-    link.setAttribute('href', '#');
-    link.innerHTML = artigo.titulo;
-    link.addEventListener('click', () => {
-      exibirArtigo(artigo);
-    });
-    item.appendChild(link);
-    item.appendChild(excluirBtn);
-    lista.appendChild(item);
-  });
-}
-
