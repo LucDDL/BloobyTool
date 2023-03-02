@@ -7,7 +7,7 @@ function cadastrarArtigo(event) {
   const data = document.getElementById('input-data').value;
   const conteudo = document.getElementById('input-conteudo').value;
   const videoInput = document.getElementById('input-video');
-  const videoUrl = URL.createObjectURL(videoInput.files[0]); // obter a URL do arquivo selecionado
+  const videoUrl = URL.createObjectURL(videoInput.files[0]); 
   const novoArtigo = {
     titulo: titulo,
     autor: autor,
@@ -16,7 +16,7 @@ function cadastrarArtigo(event) {
     videoUrl: videoUrl
   };
   artigos.push(novoArtigo);
-  localStorage.setItem('artigos', JSON.stringify(artigos)); // salvar os artigos no localStorage
+  localStorage.setItem('artigos', JSON.stringify(artigos)); 
   document.getElementById('form-artigo').reset();
   listarArtigos();
 }
