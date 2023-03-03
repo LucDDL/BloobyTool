@@ -3,27 +3,22 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' 'unsafe-eval' https://stackpath.bootstrapcdn.com">
-
   <title>BASE</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
-  
-  
   <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body >
+<body>
   <div class="jumbotron"
-    style="background: linear-gradient(to bottom, #3d3b3b, #23449e, rgb(141, 45, 141)); color: aliceblue; border-radius: 0; width:950px; height: 130px;">
+    style="background: linear-gradient(to bottom, #3d3b3b, #23449e, rgb(141, 45, 141)); color: aliceblue; border-radius: 0; width:950px; ">
     <div class="container">
-      <h1 style="margin-top: 0px;"> <i class="fas fa-robot"></i> <strong> ZigBASE</strong></h1>
+      <h1> <i class="fas fa-robot"></i> ZIGGY</h1>
       <p class="lead">base de conhecimento</p>
     </div>
   </div>
@@ -34,23 +29,20 @@
           <label for="question" id="qst"> <strong>🤔 Qual sua duvida, hoje?</strong> </label>
           <div class="input-group">
             <input type="text" class="form-control" id="input-consulta" placeholder="Digite o termo de busca">
-
-            <button class="btn btn-outline-primary btn-custom" type="button" id="btn-buscar">Buscar</button>
-
+            <div class="input-group-append">
+              <button class="btn btn-outline-primary btn-custom" type="button" id="btn-buscar">Buscar</button>
             </div>
           </div>
         </div>
         <ul id="lista-artigos" class="list-unstyled"></ul>
       </div>
-         
-      
     </div>
     <hr>
     <div class="card" style="margin-bottom: 3px;">
       <div class="card-body">
         <div class="row">
           <div class="col-md-8">
-            <h2 style="font-size: 20px; color: green;"> <strong>📝 Deixe sua dica, pra gente!!</strong></h2>
+            <h2 style="font-size: 20px; color: green;"> <strong>Deixe sua dica, pra gente!! 📝</strong></h2>
             <form id="form-artigo">
               <div class="form-group">
                 <label for="input-titulo"><strong>Título</strong></label>
@@ -82,11 +74,6 @@
     </div>
 
     <hr>
-    
-    
-
-
-    <hr>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -96,17 +83,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
-  
-      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-  
-  <script src="popup.js"></script>
-  <script src="storage.js"></script>
-  
-
-  
+  <script src="/popup.js"></script>
 </body>
 
 </html>
