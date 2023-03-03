@@ -7,7 +7,7 @@ body {
   right: 0;
   width: 500px;
   height: 500px;
-  background: #444654;
+  background: #3d404e;
   padding: 0px;
   font-family: system-ui, sans-serif;
  
@@ -35,7 +35,7 @@ label {
 }
 
 #lista-artigos li {
-  background-color: #b1b3b4;
+  background-color: #b2bdc2;
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 5px;
@@ -85,6 +85,14 @@ input {
 
 .card-body{
   border: none;
+}
+
+
+video {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  max-height: 290px;
 }
 
 
