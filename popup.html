@@ -62,11 +62,22 @@
                   placeholder="Digite o conteúdo do artigo"></textarea>
               </div>
               <div class="form-group">
-                <label for="input-video"> <strong>📹 Envie seu vídeo</strong></label>
-                <input type="file" class="form-control-file btn-upload" id="input-video" accept="video/*">
-
+                <label for="input-video"></label>
+                <button type="button" class="btn btn-outline-primary btn-custom btn-upload">
+                  <i class="fas fa-camera"></i>
+                </button>
+                <input type="file" class="form-control-file" id="input-video" accept="video/*" style="display: none;">
+                <button type="submit" class="btn btn-outline-primary btn-custom btn-upload">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              
+              
               </div>
-              <button type="submit" class="btn btn-outline-primary btn-custom">Cadastrar</button>
+              
+             
+              
+              
+              
             </form>
           </div>
         </div>

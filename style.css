@@ -1,98 +1,144 @@
 ::-webkit-scrollbar {width: 5px; }
-::-webkit-scrollbar-track {background-color: #444654; }
-::-webkit-scrollbar-thumb {background-color: rgb(141, 45, 141);; border-radius: 1px; height: 8px; }
+::-webkit-scrollbar-track {background: linear-gradient(to bottom, #3d3b3b, #23449e, rgb(141, 45, 141)); }
+::-webkit-scrollbar-thumb {background-color: rgb(233, 17, 136);; border-radius: 1px; height: 8px; }
 
 body {
   top: 0;
   right: 0;
   width: 500px;
-  height: 500px;
-  background: #3d404e;
-  padding: 0px;
+  height: 400px;
+  background: rgb(17, 0, 22);
   font-family: system-ui, sans-serif;
  
 }
 
-#qst{
-  color: green;
+:root {
+  --color1: #003b5f;
+  --color2: #00557b;
+  --color3: #007e9f;
+  --color4: #00b6c4;
+  --color5: #2d3837;
+  --color6: #fff;
 }
 
-label {
-  color: green;
-}
-
-.btn-custom {
-  color: #fff;
-  background-color: rgb(141, 45, 141);
-  border-color: rgb(141, 45, 141);
-}
-
-#lista-artigos {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+body {
+  background-color: var(--color1);
   
 }
 
-#lista-artigos li {
-  background-color: #b2bdc2;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 5px;
+.title {
+  color: var(--color4);
+}
+
+.subtitle {
+  color: var(--color3);
+}
+
+/*estilização dos botoes*/
+
+input, button {
+  color: var(--color5);
+  background-color: var(--color2);
+  border-color: var(--color4);
+}
+
+.card {
+  background-color: var(--color6);
   
 }
 
-#lista-artigos li a {
-  font-weight: bold;
-  color: #000000;
-  text-decoration: none;
-  
+.btn-custom i {
+  font-size: 1.5em;
+  color: #007bff;
 }
 
-#lista-artigos li button {
-  background-color: green;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin-left: 330px;
-  
-
-}
-
-#lista-artigos li button:hover {
-  background-color: green;
-  cursor: pointer;
-}
-
-.btn-custom:hover {
-  background-color: green;
-}
-
-input {
-  border: none;
-  background-color: rgb(121, 126, 148);
-}
-
-.btn-upload {
-  border: none;
-  background-color: #6374a3;
-  color: rgb(255, 255, 255);
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 9px;
-}
-
-.card-body{
-  border: none;
-}
-
+/*estilização do minplayer*/
 
 video {
-  width: 100%;
-  height: auto;
-  max-width: 400px;
-  max-height: 290px;
+  width: 430px;
+  height: 300px;
+  border: 1px solid #070707;
+  
+  
 }
 
+.video-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: #ccc;
+}
+
+
+
+
+.video-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0eef8;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 45px;
+  margin-top: 0;
+}
+
+.video-control {
+  background-color: transparent;
+  border: none;
+  margin: 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.excluir-artigo {
+  color: white;
+}
+
+.video-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -10px;
+  
+}
+
+.play {
+  float: left;
+  color: green;
+
+}
+
+.pause {
+  float: left;
+  margin-left: 10px;
+  font-size: 20px;
+  color: rgb(247, 143, 8);
+}
+
+.stop {
+  float: right;
+  color: rgb(247, 143, 8);
+}
+
+.excluir-artigo {
+  float: right;
+  margin-right: 10px;
+  font-size: 20px;
+  color: red;
+}
+
+.copiar-texto i {
+  color: #555;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.copiar-texto {
+  border: none;
+  background-color: transparent;
+}
 
