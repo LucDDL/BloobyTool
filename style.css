@@ -2,15 +2,7 @@
 ::-webkit-scrollbar-track {background: linear-gradient(to bottom, #3d3b3b, #23449e, rgb(141, 45, 141)); }
 ::-webkit-scrollbar-thumb {background-color: rgb(233, 17, 136);; border-radius: 1px; height: 8px; }
 
-body {
-  top: 0;
-  right: 0;
-  width: 500px;
-  height: 400px;
-  background: rgb(17, 0, 22);
-  font-family: system-ui, sans-serif;
- 
-}
+
 
 :root {
   --color1: #003b5f;
@@ -23,6 +15,11 @@ body {
 
 body {
   background-color: var(--color1);
+  font-family: system-ui, sans-serif;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 400px;
   
 }
 
