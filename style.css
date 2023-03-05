@@ -1,8 +1,14 @@
-::-webkit-scrollbar {width: 5px; }
-::-webkit-scrollbar-track {background: linear-gradient(to bottom, #3d3b3b, #23449e, rgb(141, 45, 141)); }
-::-webkit-scrollbar-thumb {background-color: rgb(233, 17, 136);; border-radius: 1px; height: 8px; }
-
-
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, #3d3b3b, #23449e, rgb(141, 45, 141));
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(233, 17, 136);
+  border-radius: 1px;
+  height: 8px;
+}
 
 :root {
   --color1: #003b5f;
@@ -20,7 +26,6 @@ body {
   right: 0;
   width: 500px;
   height: 400px;
-  
 }
 
 .title {
@@ -33,7 +38,8 @@ body {
 
 /*estilização dos botoes*/
 
-input, button {
+input,
+button {
   color: var(--color5);
   background-color: var(--color2);
   border-color: var(--color4);
@@ -41,12 +47,12 @@ input, button {
 
 .card {
   background-color: var(--color6);
-  
+  position: relative;
 }
 
 .btn-custom i {
   font-size: 1.5em;
-  color: #007bff;
+  color: #010a14;
 }
 
 /*estilização do minplayer*/
@@ -55,8 +61,6 @@ video {
   width: 430px;
   height: 300px;
   border: 1px solid #070707;
-  
-  
 }
 
 .video-controls {
@@ -66,9 +70,6 @@ video {
   height: 40px;
   background-color: #ccc;
 }
-
-
-
 
 .video-controls {
   display: flex;
@@ -98,13 +99,11 @@ video {
   display: flex;
   justify-content: space-between;
   margin-top: -10px;
-  
 }
 
 .play {
   float: left;
   color: green;
-
 }
 
 .pause {
@@ -138,4 +137,3 @@ video {
   border: none;
   background-color: transparent;
 }
-
