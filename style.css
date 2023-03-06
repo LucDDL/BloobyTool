@@ -20,7 +20,7 @@
 }
 
 body {
-  background-color: var(--color1);
+  background-color: rgb(220, 227, 231);
   font-family: system-ui, sans-serif;
   top: 0;
   right: 0;
@@ -48,6 +48,11 @@ button {
 .card {
   background-color: var(--color6);
   position: relative;
+  width: 490px;
+  margin-left: 2px;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  margin-bottom: 15px;
 }
 
 .btn-custom i {
