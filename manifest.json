@@ -1,24 +1,12 @@
 {
-  "manifest_version": 3,
   "name": "Assistente da base",
-  "version": "1.0.0",
-  "description": "Descrição da sua extensão",
+  "version": "1.2",
+  "manifest_version": 2,
+  "permissions": ["tabs", "activeTab", "windows"],
   "icons": {
-    "48": "icons/icon-48.png"
+    "48": "icon.png"
   },
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "48": "icons/icon-48.png"
-    }
-  },
-  "permissions": [
-    "tabs",
-    "storage",
-    "unlimitedStorage"
-  ],
-  "host_permissions": [
-    "https://www.google.com/"
-  ]
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
 }
-
