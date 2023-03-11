@@ -2,11 +2,11 @@
   "name": "Assistente da base",
   "version": "1.2",
   "manifest_version": 2,
-  "permissions": ["tabs", "activeTab", "windows"],
+  "permissions": ["tabs", "activeTab", "windows", "storage"],
   "icons": {
     "48": "icon.png"
   },
   "browser_action": {
-    "default_popup": "popup.html"
+    "default_popup": "login.html"
   }
 }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Miniblog Extension - Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <section class="hero is-primary is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column is-half">
+              <div class="card">
+                <div class="card-content">
+                  <h1
+                    class="title has-text-centered"
+                    style="color: rgb(2, 19, 34)"
+                  >
+                    LOGIN
+                  </h1>
+                  <form>
+                    <div class="field">
+                      <label class="label">Email</label>
+                      <div class="control">
+                        <input
+                          class="input"
+                          type="email"
+                          placeholder="Digite seu email"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="field">
+                      <label class="label">Senha</label>
+                      <div class="control">
+                        <input
+                          class="input"
+                          type="password"
+                          placeholder="Digite sua senha"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="field is-grouped">
+                      <div class="control">
+                        <button class="button is-primary" id="login-btn">
+                          Login
+                        </button>
+                      </div>
+                      <div class="control">
+                        <button class="button is-info" id="register-btn">
+                          Cadastrar
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="login.js"></script>
+  </body>
+</html>
